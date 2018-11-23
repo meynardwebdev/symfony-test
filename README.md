@@ -1,26 +1,26 @@
 # Web Developer Skill Test
 
-### Installation using Homestead
+### Installation
 
-    - Clone the repository using git bash to your desired path or location in your pc
-    ```sh
-      $ git clone git@github.com:meynardwebdev/web-developer-test.git
-    ```
-    
-    - Navigate to the project folder
-    ```sh
-      $ cd web-developer-test
-    ```
+- Clone the repository using git bash to your desired path or location in your pc
+```sh
+  $ git clone git@github.com:meynardwebdev/web-developer-test.git
+```
 
-    - Install dependencies using composer
-    ```sh
-      $ composer install
-    ```
+- Navigate to the project folder
+```sh
+  $ cd web-developer-test
+```
 
-    - Setup the the database connection credentials on /.env file
+- Install dependencies using composer
+```sh
+  $ composer install
+```
 
-    - Import dump.sql to your database
+- Setup the the database connection credentials on /.env file
 
-    - Default user account is admin / password
+- Import dump.sql to your database
 
-    - Then you're good to go!
+- Default user account is admin / password
+
+- Then you're good to go!
