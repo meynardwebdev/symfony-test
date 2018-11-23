@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container-fluid position-relative">
+        <div id="header-image" class="row px-0 pt-5 pb-5 position-relative gray-bottom-bordered" style="background: url('{{ asset('assets/images/banner.jpg') }}') no-repeat;">
+            <div class="position-absolute pt-5 non-mobile" style="left: 0;">
+                <div class="nav flex-column pt-5">
+                    {% for soc in left_soc %}
+                    <div class="nav-item">
+                        <img src="{{ asset('assets/images/')~'soc_'~soc~'.png' }}" />
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="position-absolute non-mobile pt-5" style="right: 0;">
+                <div class="nav flex-column">
+                    {% for sup in sup_icons %}
+                    <div class="nav-item">
+                        <a href="#"><img src="{{ asset('assets/images/')~'sup-'~sup~'.png' }}" /></a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div id="login-form" class="col-md-3 offset-md-7 position-relative px-0">
+                <div class="card card-body">
+                    <h2 class="text-center mb-3">Student Login</h2>
+                    <form method="post" action="{{ path('login') }}">
+                        <div class="form-group mt-3 mb-3">
+                            <label>Username:</label>
+                            <input class="form-control" name="_username" type="text" value="" placeholder="e.g., john" />
+                        </div>
+                        <div class="form-group mb-5">
+                            <label>Password:</label>
+                            <input class="form-control" type="password" name="_password" value="" placeholder="e.g., &bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn blue-bg" type="submit">Sign in <img src="{{ asset('assets/images/btn-go.png') }}" /></button>
+                        </div>
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="courses-offered" class="row gray-bg gray-bottom-bordered pb-5">
+            <div class="col-md-8 offset-md-2 pt-5 pb-5">
+                <h2 class="text-center">Our Courses</h2>
+            </div>
+            {% for i, course in courses_offered %}
+                <div class="col-md-2 pb-5 {{ i == 0 ? 'offset-md-2' : '' }}">
+                    <div class="card card-body">
+                        <h6 class="text-center">{{ course }}</h6>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesquegravida nisl eget erat convallis feugiat. Nulla facilisi. Suspendisse omare eros diam. Phasellus in petrium nibh. Morbi efficitur mi neque, nec consequat nisl pre.
+                        </p>
+                        <button class="btn blue-bg">Learn More</button>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div id="about-us" class="row brown-bottom-bordered">
+            <div class="col-md-8 offset-md-2 pt-5 pb-5">
+                <h2 class="text-center">About Us</h2>
+            </div>
+            <div class="col-md-8 offset-md-2 mb-5">
+                <p class="text-center">
+                    Proin gravida tortor non diam maximus, a congue ex lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices lacus in varius fringilla. Phasellus et sapien tellus. Aenean eu quam at ipsum volutpat eleifend. Mauris aliquam tincidunt tellus et lacinia. Cras euismod, enim non blandit gravida, magna ipsum malesuada nibh, a molestie enim justo pretium turpis. Integer ultricies fermentum mauris, sit amet ultrices arcu elementum ac. Suspendisse ac magna mattis erat ornare venenatis ac vel magna.
+                    <br /><br />
+                    Sed erat turpis, cursus ut justo ut, sodales suscipit diam. Phasellus in tempus lorem. Donec quam mauris, faucibus ac neque eu, aliquet convallis est. Nam lacinia non ligula a tempor. Maecenas eget turpis libero. Donec vitae purus quis sem consectetur pellentesque in et leo. Pellentesque dui ligula, aliquam a mattis non, auctor vel diam. Donec sodales orci vitae ipsum bibendum varius. Aliquam vel lacus convallis, venenatis mauris vel, suscipit turpis. Pellentesque ac nisi varius, consequat enim ut, vehicula ante.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,228 @@
+<footer>
+    <div class="container-fluid position-relative">
+        <div id="footer-form" class="row pt-5 pb-5 lighter-bg">
+            <div class="col-md-8 offset-md-2">
+                <div class="row">
+                    <div id="stay-connected" class="col-md-4">
+                        <h5 class="mb-3">Stay connected</h5>
+                        <div class="ftr-soc-links">
+                            <div class="nav flex-row">
+                                {% for soc in ftr_soc %}
+                                <div class="nav-item">
+                                    <a class="nav-link" href="#"><img src="{{ asset('assets/images/')~'ftr-soc-'~soc~'.png' }}" /></a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newsletter-form" class="col-md-7 offset-md-1">
+                        <h5 class="mb-3">Sign up to our newsletter</h5>
+                        <form class="row">
+                            <div class="col-md-5 mt-2 form-field">
+                                <input class="form-control no-border" type="text" placeholder="Name" value="" />
+                            </div>
+                            <div class="col-md-5 mt-2 form-field pad-left">
+                                <input class="form-control no-border" type="text" placeholder="Email" value="" />
+                            </div>
+                            <div class="col-md-2 mt-2 form-field pad-left">
+                                <button class="btn orange-bg form-control no-border text-white">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="stay-connected" class="row pt-5 pb-5 darker-bg">
+            <div class="col-md-8 offset-md-2">
+                <div id="footer-captions" class="row dark-brown-bottom-bordered pb-5 mb-4 non-mobile">
+                    <div class="col">
+                        <div class="header-text">Lorem</div>
+                        Marius vel imperdiet
+                        Faucibus metus
+                        Nulla sed quam dictum
+                        Ultricies sit amet
+                        Sed tempus
+                        Neque non tincidunt
+                        Vivamus elementum
+                        Mi ut semper
+                    </div>
+                    <div class="col">
+                        <div class="header-text">Ipsum</div>
+                        Marius vel imperdiet
+                        Faucibus metus
+                        Nulla sed quam dictum
+                        Ultricies sit amet
+                        Sed tempus
+                        Neque non tincidunt
+                        Vivamus elementum
+                    </div>
+                    <div class="col">
+                        <div class="header-text">Dolor</div>
+                        Marius vel imperdiet
+                        Faucibus metus
+                        Nulla sed quam dictum
+                        Ultricies sit amet
+                        Sed tempus
+                        Neque non tincidunt
+                        Vivamus elementum
+                        Mi ut semper
+                        Portittor vitae nulla dolor
+                        Sapien mollis
+                    </div>
+                    <div class="col">
+                        <div class="header-text">Sit amet</div>
+                        Marius vel imperdiet
+                        Faucibus metus
+                        Nulla sed quam dictum
+                        Ultricies sit amet
+                        Sed tempus
+                        Neque non tincidunt
+                        Vivamus elementum
+                        Mi ut semper
+                        Portittor vitae nulla dolor
+                    </div>
+                    <div class="col">
+                        <div class="header-text">Consectetur</div>
+                        Marius vel imperdiet
+                        Faucibus metus
+                        Nulla sed quam dictum
+                        Ultricies sit amet
+                        Sed tempus
+                        Neque non tincidunt
+                        Vivamus elementum
+                        Mi ut semper
+                    </div>
+                </div>
+                <div id="accordion" class="row mb-4 mobile-only">
+                    <div class="card">
+                        <div class="card-header darker-bg" id="headingOne">
+                            <a data-toggle="collapse" data-target="#lorem" aria-expanded="false" aria-controls="lorem">
+                                Lorem
+                                <i class="fa float-right"></i>
+                            </a>
+                        </div>
+                        <div id="lorem" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Marius vel imperdiet</li>
+                                    <li>Faucibus metus</li>
+                                    <li>Nulla sed quam dictum</li>
+                                    <li>Ultricies sit amet</li>
+                                    <li>Sed tempus</li>
+                                    <li>Neque non tincidunt</li>
+                                    <li>Vivamus elementum</li>
+                                    <li>Mi ut semper</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header darker-bg" id="headingTwo">
+                            <a data-toggle="collapse" data-target="#ipsum" aria-expanded="false" aria-controls="ipsum">
+                                Ipsum
+                                <i class="fa float-right"></i>
+                            </a>
+                        </div>
+                        <div id="ipsum" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Marius vel imperdiet</li>
+                                    <li>Faucibus metus</li>
+                                    <li>Nulla sed quam dictum</li>
+                                    <li>Ultricies sit amet</li>
+                                    <li>Sed tempus</li>
+                                    <li>Neque non tincidunt</li>
+                                    <li>Vivamus elementum</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header darker-bg" id="headingThree">
+                            <a data-toggle="collapse" data-target="#dolor" aria-expanded="false" aria-controls="dolor">
+                                Dolor
+                                <i class="fa float-right"></i>
+                            </a>
+                        </div>
+                        <div id="dolor" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Marius vel imperdiet</li>
+                                    <li>Faucibus metus</li>
+                                    <li>Nulla sed quam dictum</li>
+                                    <li>Ultricies sit amet</li>
+                                    <li>Sed tempus</li>
+                                    <li>Neque non tincidunt</li>
+                                    <li>Vivamus elementum</li>
+                                    <li>Mi ut semper</li>
+                                    <li>Portittor vitae nulla dolor</li>
+                                    <li>Sapien mollis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header darker-bg" id="headingFour">
+                            <a data-toggle="collapse" data-target="#sit-amet" aria-expanded="false" aria-controls="sit-amet">
+                                Sit amet
+                                <i class="fa float-right"></i>
+                            </a>
+                        </div>
+                        <div id="sit-amet" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Marius vel imperdiet</li>
+                                    <li>Faucibus metus</li>
+                                    <li>Nulla sed quam dictum</li>
+                                    <li>Ultricies sit amet</li>
+                                    <li>Sed tempus</li>
+                                    <li>Neque non tincidunt</li>
+                                    <li>Vivamus elementum</li>
+                                    <li>Mi ut semper</li>
+                                    <li>Portittor vitae nulla dolor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header darker-bg" id="headingFive">
+                            <a data-toggle="collapse" data-target="#consectetur" aria-expanded="false" aria-controls="consectetur">
+                                Consectetur
+                                <i class="fa float-right"></i>
+                            </a>
+                        </div>
+                        <div id="consectetur" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Marius vel imperdiet</li>
+                                    <li>Faucibus metus</li>
+                                    <li>Nulla sed quam dictum</li>
+                                    <li>Ultricies sit amet</li>
+                                    <li>Sed tempus</li>
+                                    <li>Neque non tincidunt</li>
+                                    <li>Vivamus elementum</li>
+                                    <li>Mi ut semper</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="copyright" class="w-100 text-center mb-3">
+                        &copy;Copyright 2015 SHTS University, All rights reserved
+                    </div>
+                    <div id="footer-menu" class="w-100 text-center d-flex justify-content-center non-mobile">
+                        <ul class="nav">
+                            {% for menu in menus %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">{{ menu }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

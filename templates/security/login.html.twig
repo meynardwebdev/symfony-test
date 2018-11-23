@@ -1,0 +1,55 @@
+{% extends 'security/base.html.twig' %}
+
+{% block content %}
+
+    <div class="row justify-content-md-center mt-5">
+        <div class="col-5">
+            <form action="{{ path('login') }}" method="POST">
+                <div class="form-group">
+                    <a class="d-block text-center" href="/">
+                        <h1>SHTS University</h1>
+                    </a>
+                </div>
+
+                {% if error %}
+                    <div class="alert alert-danger">
+                        <p>{{ error.messageKey|trans(error.messageData, 'security') }}</p>
+                    </div>
+                {% endif %}
+
+                <hr />
+
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa fa-fw fa-user"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="username" name="_username" value="{{ last_username }}" placeholder="{{ "Username"|trans }}" class="form-control" autofocus />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa fa-fw fa-lock"></i>
+                            </span>
+                        </div>
+                        <input type="password" id="password" name="_password" placeholder="{{ "Password"|trans }}" class="form-control" />
+                    </div>
+                </div>
+
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-block btn-info"><i class="fa fa-unlock-alt"></i> Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

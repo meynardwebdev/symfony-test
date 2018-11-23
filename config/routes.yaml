@@ -1,0 +1,46 @@
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+logout:
+    path: /logout
+
+dashboard:
+    path: /dashboard
+    controller: 'App\Controller\DashboardController::index'
+
+users:
+    path: /dashboard/users
+    controller: 'App\Controller\DashboardController::users'
+
+user.add:
+    path: /dashboard/user/add
+    controller: 'App\Controller\DashboardController::user_form'
+
+user.edit:
+    path: /dashboard/user/edit/{id}
+    controller: 'App\Controller\DashboardController::user_form'
+
+user.delete:
+    path: /dashboard/user/delete
+    controller: 'App\Controller\DashboardController::user_delete'
+
+fibonacci:
+    path: /dashboard/fibonacci
+    controller: 'App\Controller\DashboardController::fibonacci'
+
+palindrome:
+    path: /dashboard/palindrome
+    controller: 'App\Controller\DashboardController::palindrome'
+
+anagram:
+    path: /dashboard/anagram
+    controller: 'App\Controller\DashboardController::anagram'
+
+number-sorting:
+    path: /dashboard/number-sorting
+    controller: 'App\Controller\DashboardController::number_sorting'
+
+index:
+    path: /
+    controller: App\Controller\DefaultController::index

@@ -1,0 +1,139 @@
+@media only screen and (max-width: 768px) {
+    .non-mobile {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .navbar .navbar-brand h1 {
+        font-size: 100%;
+    }
+    #header-image {
+        background-position-x: 40%!important;
+    }
+    #login-form {
+        margin: 0 auto;
+        margin-top: 200px;
+        width: 85%;
+    }
+    #login-form .card.card-body {
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #login-form .form-group {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    #login-form .form-group:nth-child(2) {
+        margin-bottom: 1em!important;
+    }
+    #login-form .form-group:last-child {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #login-form .form-group label,
+    #login-form .form-group input {
+        display: inline-block;
+    }
+    #login-form .form-group input {
+        width: 68%;
+    }
+    #login-form .form-group button {
+        width: 100%;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+    #courses-offered {
+        padding-bottom: 1em!important;
+    }
+    #courses-offered .card.card-body {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    #courses-offered .card.card-body p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    #courses-offered .card.card-body button {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 100%!important;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+    #footer-form {
+        padding-bottom: 0!important;
+    }
+    #stay-connected {
+        border-bottom: 1px solid #c3ba9c;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0!important;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
+    #stay-connected h5,
+    #newsletter-form h5 {
+        text-align: center;
+    }
+    #stay-connected .nav {
+        justify-content: center;
+    }
+    #newsletter-form {
+        border-bottom: 2px solid #c3ba9c;
+        padding-bottom: 3em;
+    }
+    #newsletter-form .form-field {
+        padding-left: 1em!important;
+        padding-right: 1em!important;
+    }
+    #accordion .card {
+        border: none;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+    #accordion .card .card-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #c3ba9c;
+    }
+    #accordion .card .card-header a {
+        color: #000000!important;
+        width: 100%;
+    }
+    #accordion .card .card-header a[aria-expanded=false] i:after {
+        content: "\f078";
+        float: right;
+    }
+    #accordion .card .card-header a[aria-expanded=true] i:after {
+        content: "\f077";
+        float: right;
+    }
+    #accordion .card .card-body {
+        background-color: #f1f1f1!important;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0;
+        padding-bottom: 1em;
+    }
+    #accordion .card .card-body ul {
+        background-color: #ffffff!important;
+        list-style: none;
+        padding-left: 0;
+        padding-top: 1em;
+        margin-bottom: 0;
+    }
+    #accordion .card .card-body ul li {
+        border-bottom: 1px solid #dcdcdc;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+}

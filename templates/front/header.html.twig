@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div id="topnav" class="row">
+        <div class="col-md-8 offset-md-2 px-0">
+            <ul class="navbar nav justify-content-end flex-row pt-0 pb-0 pr-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="{{ asset('assets/images/top-phone.png') }}" />1234 567 890
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="{{ asset('assets/images/top-email.png') }}" /> Contact Us
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="{{ asset('assets/images/top-question.png') }}" /> FAQs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-0" href="#">
+                        <img src="{{ asset('assets/images/top-login.png') }}" /> Student Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 offset-md-2 pr-0">
+            <nav class="navbar navbar-light navbar-expand-lg pr-0">
+                <a class="navbar-brand" href="{{ path('index') }}">
+                    <h1>SHTS University</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbars">
+                    <ul class="nav">
+                        {% for menu in menus %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">{{ menu }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

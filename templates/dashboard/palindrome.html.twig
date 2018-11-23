@@ -1,0 +1,24 @@
+{% extends '/dashboard/base.html.twig' %}
+
+{% block content %}
+    <div class="row justify-content-md-center">
+        <h2>Palindrome Tester</h2>
+        <hr />
+        <div class="col-md-6">
+            {% if error is not null %}
+                <div class="alert alert-warning">{{ error }}</div>
+            {% elseif is_palindrome is not null %}
+                <div class="alert alert-success">{{ is_palindrome }}</div>
+            {% endif %}
+            <form class="mt-5" method="post">
+                <div class="form-group">
+                    <label>Enter a phrase</label>
+                    <input class="form-control" type="text" name="phrase" value="" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

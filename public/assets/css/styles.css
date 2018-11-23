@@ -1,0 +1,165 @@
+/* Top Nav */
+#topnav {
+    background-color: #262626;
+}
+#topnav a,
+#topnav a:hover {
+    color: #ffffff!important;
+}
+
+/* navbar */
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover {
+    color: #0087dc!important;
+}
+.navbar .nav .nav-item .nav-link,
+.navbar .nav .nav-item .nav-link:hover {
+    color: #000000!important;
+}
+
+.btn-sign-in {
+    background-color: #009dde;
+}
+
+/* Background colors */
+.gray-bg {
+    background-color: #f1f1f1!important;
+}
+.lighter-bg {
+    background-color: #eae4cf!important;
+}
+.darker-bg {
+    background-color: #d9d2ba!important;
+}
+.orange-bg {
+    background-color: #ffa200!important;
+}
+.blue-bg {
+    background-color: #009dde!important;
+}
+
+/* Header image */
+#header-image {
+    background-position-y: 50%!important;
+    background-size: cover!important;
+}
+
+/* Home page */
+#header-image .card.card-body {
+    background-color: rgba(255, 255, 255, .9);
+    border: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+#login-form label {
+    font-weight: 700;
+}
+#login-form .form-control {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+#login-form button {
+    color: #ffffff;
+    display: block;
+    font-size: 28px;
+    line-height: 48px;
+    margin: 0 auto;
+    width: 80%;
+}
+#courses-offered .card.card-body {
+    background-color: #ffffff;
+    border: none;
+    padding-left: .5em;
+    padding-right: .5em;
+    
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+#courses-offered .card.card-body p {
+    font-size: 13px;
+    line-height: 20px;
+}
+#courses-offered .card.card-body button {
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Stay connected */
+.ftr-soc-links .nav-link {
+    padding-left: 0;
+}
+.ftr-soc-links .nav-item:last-child a.nav-link {
+    padding-right: 0;
+}
+
+/* Newsletter */
+#newsletter-form .form-field {
+    padding-right: 0;
+}
+#newsletter-form .form-field.pad-left {
+    padding-left: 7.5px;
+}
+#newsletter-form .form-field .form-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Footer */
+#footer-captions {
+    font-size: 14px;
+    color: #51514e;
+}
+#footer-captions .header-text {
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+#copyright,
+#footer-menu li a {
+    font-size: 14px;
+    color: #51514e;
+}
+#footer-menu li {
+    border-right: 1px solid #51514e;
+}
+#footer-menu li:last-child {
+    border-right: none;
+}
+#footer-menu li a {
+    line-height: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Helper class */
+.no-border {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.text-white {
+    color: #ffffff;
+}
+.gray-bottom-bordered {
+    border-bottom: 1px solid #dcdcdc;
+}
+.brown-bottom-bordered {
+    border-bottom: 1px solid #d3ccb4;
+}
+.dark-brown-bottom-bordered {
+    border-bottom: 1px solid #c3ba9c;
+}
+.non-mobile {
+    display: flex;
+}
+.mobile-only {
+    display: none;
+}
