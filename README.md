@@ -1,6 +1,6 @@
 # Web Developer Skill Test
 
-### Installation using Homestead/Vagrant
+### Installation using Homestead
 
     - Clone the repository using git bash to your desired path or location in your pc
     ```sh
